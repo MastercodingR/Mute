@@ -29,8 +29,6 @@ class Mute extends PluginBase implements Listener {
 
       self::$instance = $this;
 
-      Server::getInstance()->getCommandMap()->unregister(Server::getInstance()->getCommandMap()->getCommand("unmute"));
-
       $this->registerCommands();
       $this->registerEvents();
 
